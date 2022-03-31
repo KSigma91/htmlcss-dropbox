@@ -23,8 +23,16 @@ img {
     max-width: 100%;
 }
 
+.button {
+    background: #0161FF;
+    padding: 5px 20px;
+    color: white;
+}
+
 /* barra header */
 .top-bar {
+    position: fixed;
+    z-index: 300;
     width: 100%;
     /* debug */
     background: grey;
@@ -34,8 +42,7 @@ img {
 /* barra parte sinistra */
 .top-bar .row-left {
     float: left;
-    line-height: 80px;
-    
+    line-height: 80px;   
 }
 
 .top-bar .row-left a {
@@ -56,8 +63,52 @@ img {
     margin: 0 25px;
 }
 
-.row-right #start {
-    background: #0161FF;
-    padding: 5px 20px;
-    color: white;
+/* jumbotron */
+.row {
+    float: left;
+    background: #B4D0E7;
+    width: 100%;
+    margin: auto;
+}
+
+.row .content {
+    width: 80%;
+    margin: auto;
+    padding: 90px 0;
+    /* debug */ 
+    height: 100vh;
+}
+
+.row .content h1 {
+    font-size: 70px;
+    width: 1200px;
+    margin: 50px 0;
+}
+
+.row p {
+    /* float: left; */
+    width: 20%;
+    margin-bottom: 40px; 
+}
+
+.row .content .button {
+    margin-top: 50px;
+}
+
+.row .content #discard {
+    font-size: 15px;
+    margin-top: 20px;
+    width: 230px;
+}
+
+.row .content i {
+    font-size: 40px;
+}
+
+.row .content img {
+    float: right;
+    bottom: 0;
+    right: 0;
+    width: 80%;
+    height: auto;
 }
