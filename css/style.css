@@ -79,6 +79,7 @@ img {
     float: left;
     background: #B4D0E7;
     width: 100%;
+    height: 100%;
     margin: auto;
 }
 
@@ -125,17 +126,85 @@ img {
 }
 
 /* contenuto prima parte */
+
+/* checklist */
 .content {
     width: 60%;
+    height: 100vh;
     margin: auto;
 }
 
 .content h2 {
-    padding: 50px 0;
     text-align: left;
     font-size: 40px;
 }
 
 .content input {
-    margin: 20px 0;
+    display: inline-block;
+    margin: 80px 0;
+}
+
+/* abbonamenti */
+.col {
+    float: left;
+    width: 300px;
+    border: 1px solid #cecece;
+    /* debug */
+    height: 800px;
+}
+
+.icon {
+    border-bottom: 1px solid #cecece;
+    height: 45px;
+    width: auto;
+    text-align: center;
+    line-height: 45px;
+}
+
+i {
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+/* tariffe */
+.col .core {
+    margin: 30px;
+}
+
+.core h2 {
+    font-size: 23px;
+    margin-bottom: 20px;
+}
+
+.core h3 {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 1px;
+}
+
+.core h4 {
+    margin-bottom: 10px;
+    font-size: 13px;
+    color: grey;
+}
+
+.core a {
+    margin-top: 30px;
+    border-bottom: 1px solid #cecece;
+    width: 30px;
+}
+
+.core span {
+    color: deepskyblue;
+    text-decoration: underline;
+}
+
+/* descrizione */
+.core .plan h3 {
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+.core .d-list {
+    margin-top: 30px;
 }
