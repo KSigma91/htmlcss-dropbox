@@ -7,3 +7,57 @@
 body {
     font-family: 'Open Sans', sans-serif;
 }
+
+/* impostazioni generali */
+.container {
+    width: 100%;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* barra header */
+.top-bar {
+    width: 100%;
+    /* debug */
+    background: grey;
+    height: 80px;
+}
+
+/* barra parte sinistra */
+.top-bar .row-left {
+    float: left;
+    line-height: 80px;
+    
+}
+
+.top-bar .row-left a {
+   margin: 0 25px;
+}
+
+.row-left #logo-db img {
+    width: 130px;
+}
+
+/* barra parte destra */
+.top-bar .row-right {
+    float: right;
+    line-height: 80px;
+}
+
+.top-bar .row-right a {
+    margin: 0 25px;
+}
+
+.row-right #start {
+    background: #0161FF;
+    padding: 5px 20px;
+    color: white;
+}
