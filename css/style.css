@@ -130,7 +130,7 @@ img {
 
 /* impostazioni generali */
 .content {
-    width: 60%;
+    width: 65%;
     margin: auto;
     /* debug */
     height: 100%;
@@ -163,14 +163,14 @@ img {
 }
 
 .content .top-text input {
-    margin-top: 60px;
+    margin: 60px 0;
 }
 
 /* abbonamenti */
 .content .dropbox {
     float: left;
-    margin-top: 40px;
-    width: 280px; 
+    margin-right: 70px;
+    width: 340px; 
     border: 1px solid #cecece;
     /* debug */
     /* height: 100vh; */
@@ -184,8 +184,9 @@ img {
 }
 
 .content .dropbox .top-box i {
-    margin: 15px 98px;
+    margin: 15px 119px;
     padding: 2px 0;
+    text-align: center;
 }
 
 /* descrizione */
@@ -213,6 +214,8 @@ img {
     display: block;
     margin-top: 50px;
     font-size: 15px;
+    text-align: center;
+    padding: 8px;
 }
 
 .center-box span, .buy {
