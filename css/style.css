@@ -61,7 +61,7 @@ img {
 /* barra parte destra */
 .top-bar .row-right { 
     line-height: 80px;
-    margin-left: 69%;
+    margin-left: 65%;
 }
 
 .top-bar .row-right a {
@@ -79,8 +79,9 @@ img {
     float: left;
     background: #B4D0E7;
     width: 100%;
-    height: 100%;
     margin: auto;
+    /* debug */
+    height: 100%;
 }
 
 .row .content-text {
@@ -88,7 +89,7 @@ img {
     margin: auto;
     padding: 90px 0;
     /* debug */ 
-    height: 100%;
+    /* height: 100%; */
 }
 
 .row .content-text h1 {
@@ -127,84 +128,118 @@ img {
 
 /* contenuto prima parte */
 
-/* checklist */
+/* impostazioni generali */
 .content {
     width: 60%;
-    height: 100vh;
     margin: auto;
+    /* debug */
+    height: 100%;
 }
 
-.content h2 {
-    text-align: left;
+.content::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.content i {
+    /* display: block; */
+    margin-top: 30px;
+    width: 30%;
+}
+
+/* checklist */
+.content .top-text {
+    float: left;
+    background: red;
+    width: auto;
+    /* debug */
+    height: auto;
+}
+
+.content .top-text h2 {
     font-size: 40px;
+    margin-top: 200px;
 }
 
-.content input {
-    display: inline-block;
-    margin: 80px 0;
+.content .top-text input {
+    margin-top: 60px;
 }
 
 /* abbonamenti */
-.col {
+.content .dropbox {
     float: left;
-    width: 300px;
+    margin-top: 40px;
+    width: 280px; 
     border: 1px solid #cecece;
     /* debug */
-    height: 800px;
+    /* height: 100vh; */
 }
 
-.icon {
+.content .dropbox .top-box { 
     border-bottom: 1px solid #cecece;
-    height: 45px;
-    width: auto;
-    text-align: center;
-    line-height: 45px;
+    width: auto;  
+    /* debug */
+    height: 50px;
 }
 
-i {
-    font-weight: 500;
-    margin-bottom: 20px;
-}
-
-/* tariffe */
-.col .core {
-    margin: 30px;
-}
-
-.core h2 {
-    font-size: 23px;
-    margin-bottom: 20px;
-}
-
-.core h3 {
-    font-size: 14px;
-    font-weight: bold;
-    margin-bottom: 1px;
-}
-
-.core h4 {
-    margin-bottom: 10px;
-    font-size: 13px;
-    color: grey;
-}
-
-.core a {
-    margin-top: 30px;
-    border-bottom: 1px solid #cecece;
-    width: 30px;
-}
-
-.core span {
-    color: deepskyblue;
-    text-decoration: underline;
+.content .dropbox .top-box i {
+    margin: 15px 98px;
+    padding: 2px 0;
 }
 
 /* descrizione */
-.core .plan h3 {
-    margin-top: 30px;
-    font-size: 18px;
+.content .dropbox .center-box {
+    margin: 30px 25px;
 }
 
-.core .d-list {
+.center-box h3 {
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.center-box h5 {
+    margin-top: 8px;
+    color: grey;
+}
+
+/* funzionalità */
+.dropbox .center-box i {
+    width: auto;
+}
+
+/* demo */
+.center-box .button {
+    display: block;
+    margin-top: 50px;
+    font-size: 15px;
+}
+
+.center-box span, .buy {
+    display: inline-block;
+    font-size: 13px;
+}
+
+.center-box .buy {
+    display: inline-block;
     margin-top: 30px;
+    text-decoration: underline;
+    color: deepskyblue;
+}
+
+.center-box .line {
+    display: block;
+    /* border-top: 50px; */
+    border-bottom: 1px solid #cecece;
+    width: 50px;
+    height: 35px;
+}
+
+/* dettagli */
+.center-box h4 {
+    margin-top: 40px;
+}
+
+.dropbox i:last-child {
+    margin-bottom: 150px;
 }
