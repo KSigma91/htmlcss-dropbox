@@ -61,7 +61,7 @@ img {
 /* barra parte destra */
 .top-bar .row-right { 
     line-height: 80px;
-    margin-left: 65%;
+    margin-left: 69%;
 }
 
 .top-bar .row-right a {
@@ -145,13 +145,12 @@ img {
 .content i {
     /* display: block; */
     margin-top: 30px;
-    width: 30%;
+    width: auto;
 }
 
 /* checklist */
 .content .top-text {
     float: left;
-    background: red;
     width: auto;
     /* debug */
     height: auto;
@@ -245,4 +244,61 @@ img {
 
 .dropbox i:last-child {
     margin-bottom: 150px;
+}
+
+/* contatti */
+.bottom-dropbox {
+    float: left;
+    margin-top: 50px;
+    width: calc(100% - 76px);
+}
+
+.bottom-dropbox::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* barra */
+.bottom-dropbox .top-box {
+    border: 1px solid #cecece;
+    border-width: 1px 1px 0 1px;
+    text-align: center;
+    width: 100%;
+    /* debug */
+    height: 50px;
+}
+
+.bottom-dropbox .top-box i {
+    margin: 17px 0;
+}
+
+/* contenuto */
+.bottom-dropbox .center-box {
+    float: left;
+    border: 1px solid #cecece; 
+    width: 100%; 
+    height: auto;
+}
+
+.bottom-dropbox .center-box .top-line {  
+    width: 100%;
+}
+
+.center-box .top-line h3 {
+    float: left;
+    margin: 35px 30px;
+}
+
+.center-box .top-line .button {
+    float: right;
+    margin: 38px 30px;
+    padding: 8px 80px;
+}
+
+.center-box .dropbox-text {
+    float: left;
+    margin: 0 30px;
+    text-align: left;
+    line-height: 50px;
 }
