@@ -130,7 +130,7 @@ img {
 
 /* impostazioni generali */
 .content {
-    width: 65%;
+    width: 70%;
     margin: auto;
     /* debug */
     height: 100%;
@@ -169,7 +169,8 @@ img {
 .content .dropbox {
     float: left;
     margin-right: 70px;
-    width: 340px; 
+    /* width: 340px;  */
+    width: calc((100% - 230px) / 3);
     border: 1px solid #cecece;
     /* debug */
     /* height: 100vh; */
@@ -183,7 +184,8 @@ img {
 }
 
 .content .dropbox .top-box i {
-    margin: 15px 119px;
+    width: 70px;
+    margin: 15px 148px;
     padding: 2px 0;
     text-align: center;
 }
@@ -301,4 +303,10 @@ img {
     margin: 0 30px;
     text-align: left;
     line-height: 50px;
+}
+
+/* contenuto seconda parte */
+
+.contento img {
+    width: 80%;
 }
