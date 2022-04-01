@@ -306,17 +306,18 @@ img {
 }
 
 /* contenuto seconda parte */
-
 .content .box {
     margin-top: 150px;
 }
 
+/* immagine */
 .content .box img {
     float: left;
     width: 50%;
     margin-right: 60px;
 }
 
+/* testo - pulsante */
 .content .box h3 {
     float: left;
     font-size: 30px;
@@ -340,4 +341,36 @@ img {
     background: white;
     border: 1px solid black;
     color: black;
+}
+
+/* contenuto terza parte */
+.container .grid {
+    width: 70%;
+    margin: auto;
+}
+
+/* titolo */
+.grid h2 {
+    font-size: 40px;
+    margin: 90px 0;
+}
+
+/* incolonnamento */
+.grid .col {
+    float: left;
+    margin-right: 60px;
+    width: calc((100% - 230px) / 3);
+}
+
+.grid .col h3 {
+    margin-bottom: 30px;
+    font-size: 25px;
+}
+
+.grid .col span {
+    text-decoration: underline;
+}
+
+.grid .col p {
+    margin-bottom: 100px;
 }
