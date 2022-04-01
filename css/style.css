@@ -307,6 +307,37 @@ img {
 
 /* contenuto seconda parte */
 
-.contento img {
-    width: 80%;
+.content .box {
+    margin-top: 150px;
+}
+
+.content .box img {
+    float: left;
+    width: 50%;
+    margin-right: 60px;
+}
+
+.content .box h3 {
+    float: left;
+    font-size: 30px;
+    width: 500px;
+    margin: 50px 0;
+}
+
+.content .box p {
+    float: left;
+    width: 490px;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: left;
+    line-height: 35px;
+}
+
+.content .box .button {
+    float: left;
+    margin-top: 30px;
+    padding: 8px 25px;
+    background: white;
+    border: 1px solid black;
+    color: black;
 }
