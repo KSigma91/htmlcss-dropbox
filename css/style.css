@@ -33,6 +33,10 @@ img {
     color: white;
 }
 
+h2 {
+    font-size: 40px;
+}
+
 /* barra header */
 .top-bar {
     position: fixed;
@@ -55,6 +59,7 @@ img {
 }
 
 .row-left #logo-db img {
+    margin: 26px auto;
     width: 130px;
 }
 
@@ -373,4 +378,129 @@ img {
 
 .grid .col p {
     margin-bottom: 100px;
+}
+
+/* contenuto quarta parte */
+.container .carosel {
+    width: 70%;
+    margin: auto;
+}
+
+.carosel h2 {
+    display: inline-block;
+    /* float: left; */
+    margin-top: 130px;
+    width: 600px;
+    height: auto;
+}
+
+.carosel a {
+    margin: 40px 0;
+    display: block;
+    text-decoration: underline;
+    color: #0161FF;
+    font-weight: 600;
+}
+
+/* impostazioni generali carosel */
+.carosel-box .mini-box {
+    float: left;
+    /* width: calc(50% / 1); */
+    width: 50%;
+    /* debug */
+    height: 240px;
+    border: 1px solid lime;
+}
+
+.carosel-box .mini-box img { 
+    margin: 60px 60px;
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
+}
+
+/* grid box */
+.container .carosel-box {
+    width: 100%;
+    margin: auto;
+    /* debug */
+    height: 100vh;
+}
+
+/* box left */
+.carosel-box .box-left {
+    float: left;
+    width: 25%;
+    /* debug */
+    height: auto;
+}
+
+/* box center */
+.carosel-box .box-center {
+    float: left;
+    /* width: calc(50% - 50px); */
+    width: 50%;
+}
+
+.carosel-box .box-center .mini-box {
+    padding: 50px 50px;
+    width: auto;
+    /* debug */
+    height: 480px;
+    border: 1px solid grey;
+}
+
+.box-center .mini-box img {
+    margin: 0;
+    width: 15%;
+    height: auto;
+    object-fit: contain;
+}
+
+.box-center .mini-box .line {
+    display: block;
+    margin-top: 30px;
+    border: 1px solid #cecece;
+    width: 50px;
+}
+
+.box-center .mini-box p {
+    margin-top: 60px;
+    width: 90%;
+}
+
+/* box right */
+.carosel-box .box-right {
+    float: left;
+    width: 25%;
+    /* debug */
+    height: auto;
+}
+
+/* box bottom */
+.carosel-box .box-bottom {
+    float: left;
+    width: 100%;
+    /* debug */
+    height: auto;
+    border: 1px solid deepskyblue;
+}
+
+.box-bottom .footer-box {
+    padding: 120px 250px;
+}
+
+.box-bottom .footer-box h2 {  
+    display: inline-block;
+    color: #61082B;
+    width: 500px;
+}
+
+.box-bottom .footer-box .button {
+    float: right;
+    width: 320px;
+    padding: 8px 0;
+    text-align: center;
+    /* background: white; */
+    /* color: black; */
 }
