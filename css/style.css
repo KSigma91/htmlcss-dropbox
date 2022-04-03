@@ -488,6 +488,7 @@ h2 {
 .carosel-box .box-bottom {
     float: left;
     width: 100%;
+    margin-bottom: 50px;
     /* debug */
     height: auto;
     border: 1px solid deepskyblue;
@@ -523,10 +524,12 @@ h2 {
 }
 
 .last-bottom h2 {
-    margin: 80px 0;
+    margin: 50px 0;
     float: left;
     font-size: 30px;
     width: 100%;
+    /* debug */
+    height: 40px;
 }
 
 /* contenuto */
