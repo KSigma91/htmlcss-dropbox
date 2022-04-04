@@ -14,6 +14,10 @@ body {
     margin: auto;
 }
 
+p {
+    font-weight: 500;
+}
+
 li {
     list-style-type: none;
 }
@@ -46,6 +50,10 @@ h2 {
     border-bottom: 1px solid #cecece;
     height: 80px;
     line-height: 80px; 
+}
+
+.top-bar a {
+    font-weight: 500;
 }
 
 /* barra parte sinistra */
@@ -82,54 +90,62 @@ h2 {
 
 /* jumbotron */
 .row {
-    float: left;
     background: #B4D0E7;
     width: 100%;
     margin: auto;
     /* debug */
-    height: 100%;
+    height: 100vh;
 }
 
-.row .content-text {
+.row img {
+    float: right;
+    margin-right: 150px;
+    width: 60%;
+    height: auto;
+    object-fit: contain;
+}
+
+.row .content-text-top {
     width: 80%;
     margin: auto;
     padding: 90px 0;
     /* debug */ 
-    /* height: 100%; */
+    height: auto;
 }
 
-.row .content-text h1 {
+.row .content-text-top h1 {
+    float: left;
     font-size: 70px;
-    width: 1200px;
+    width: 90%;
     margin: 50px 0;
 }
 
-.row p {
-    /* float: left; */
+/* testo centrale */
+.row .content-text-center {
+    float: left;
     width: 20%;
-    margin-bottom: 40px; 
+    height: auto;
+    margin-left: 190px;
 }
 
-.row .content-text .button {
+.row .content-text-center p {   
+    /* width: 40%; */
+    margin-bottom: 40px;
+}
+
+.row .content-text-center .button {
     margin-top: 50px;
+    padding: 8px 25px;
 }
 
-.row .content-text #discard {
-    font-size: 15px;
+.row .content-text-center #discard {
+    font-size: 14px;
     margin-top: 20px;
     width: 230px;
 }
 
-.row .content-text i {
+.row .content-text-center i {  
     font-size: 40px;
-}
-
-.row .content-text img {
-    float: right;
-    bottom: 0;
-    right: 0;
-    width: 80%;
-    height: auto;
 }
 
 /* contenuto prima parte */
@@ -138,18 +154,9 @@ h2 {
 .content {
     width: 70%;
     margin: auto;
-    /* debug */
-    height: 100%;
-}
-
-.content::after {
-    content: '';
-    display: table;
-    clear: both;
 }
 
 .content i {
-    /* display: block; */
     margin-top: 30px;
     width: auto;
 }
@@ -158,7 +165,6 @@ h2 {
 .content .top-text {
     float: left;
     width: auto;
-    /* debug */
     height: auto;
 }
 
@@ -175,17 +181,19 @@ h2 {
 .content .dropbox {
     float: left;
     margin-right: 70px;
-    /* width: 340px;  */
     width: calc((100% - 230px) / 3);
     border: 1px solid #cecece;
-    /* debug */
-    /* height: 100vh; */
+}
+
+.dropbox::after {
+    content: '';
+    display: table;
+    clear: both;
 }
 
 .content .dropbox .top-box { 
     border-bottom: 1px solid #cecece;
     width: auto;  
-    /* debug */
     height: 50px;
 }
 
@@ -213,8 +221,15 @@ h2 {
 
 /* funzionalità */
 .dropbox .center-box i {
-    width: auto;
+    margin-top: 20px;
+    display: inline-block;
 }
+
+.dropbox .center-box p {
+    margin-top: 20px;
+    display: inline-block;
+    width: 280px;
+}  
 
 /* demo */
 .center-box .button {
@@ -239,7 +254,6 @@ h2 {
 
 .center-box .line {
     display: block;
-    /* border-top: 50px; */
     border-bottom: 1px solid #cecece;
     width: 50px;
     height: 35px;
@@ -255,47 +269,40 @@ h2 {
 }
 
 /* contatti */
-.bottom-dropbox {
+.dropbox-bottom {
     float: left;
     margin-top: 50px;
-    width: calc(100% - 76px);
-}
-
-.bottom-dropbox::after {
-    content: '';
-    display: table;
-    clear: both;
+    width: calc(100% - 90px);
 }
 
 /* barra */
-.bottom-dropbox .top-box {
+.dropbox-bottom .top-box {
     border: 1px solid #cecece;
     border-width: 1px 1px 0 1px;
     text-align: center;
     width: 100%;
-    /* debug */
-    height: 50px;
 }
 
-.bottom-dropbox .top-box i {
+.dropbox-bottom .top-box i {
     margin: 17px 0;
 }
 
 /* contenuto */
-.bottom-dropbox .center-box {
+.dropbox-bottom .center-box {
     float: left;
     border: 1px solid #cecece; 
     width: 100%; 
-    height: auto;
 }
 
-.bottom-dropbox .center-box .top-line {  
-    width: 100%;
+.dropbox-bottom .center-box .top-line {  
+    /* width: 100%; */
+    height: 20px;
 }
 
 .center-box .top-line h3 {
-    float: left;
+    display: inline-block;
     margin: 35px 30px;
+    padding: 0;
 }
 
 .center-box .top-line .button {
@@ -304,23 +311,26 @@ h2 {
     padding: 8px 80px;
 }
 
-.center-box .dropbox-text {
-    float: left;
-    margin: 0 30px;
+.dropbox-bottom .center-box .dropbox-text {
+    margin-bottom: 10px;
+    padding: 20px 30px;
     text-align: left;
     line-height: 50px;
 }
 
 /* contenuto seconda parte */
 .content .box {
-    margin-top: 150px;
+    float: left;
+    margin: 120px 0;
 }
 
 /* immagine */
 .content .box img {
     float: left;
     width: 50%;
-    margin-right: 60px;
+    /* margin-right: 60px; */
+    margin: 20px 0;
+    padding-right: 60px;
 }
 
 /* testo - pulsante */
@@ -357,15 +367,17 @@ h2 {
 
 /* titolo */
 .grid h2 {
+    float: left;
     font-size: 40px;
-    margin: 90px 0;
+    margin-bottom: 60px;
+    padding-right: 200px;
 }
 
 /* incolonnamento */
 .grid .col {
     float: left;
     margin-right: 60px;
-    width: calc((100% - 230px) / 3);
+    width: calc((70% - 230px) / 2);
 }
 
 .grid .col h3 {
