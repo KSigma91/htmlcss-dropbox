@@ -42,8 +42,8 @@ h2 {
     position: fixed;
     z-index: 300;
     width: 100%;
-    /* debug */
-    background: grey;
+    background: white;
+    border-bottom: 1px solid #cecece;
     height: 80px;
     line-height: 80px; 
 }
@@ -56,6 +56,7 @@ h2 {
 .top-bar .row-left a {
    float: left;
    margin: 0 25px;
+   height: 80px;
 }
 
 .row-left #logo-db img {
