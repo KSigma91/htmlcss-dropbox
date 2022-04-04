@@ -561,19 +561,20 @@ h2 {
 .container .content-bottom {
     float: left;
     width: 100%;
-    margin: auto;
+    /* margin: auto; */
     padding: 100px 150px;
     background: black;
     /* debug */
-    height: 500px;
+    height: 530px;
 }
 
 .content-bottom .list {
     float: left;
-    width: auto;
-    margin-right: 150px;
+    width: calc((100% - 10px) / 5);
     color: white;
     line-height: 30px;
+    /* debug */
+    height: 200px;
 }
 
 .list .col-bottom h3 {
@@ -589,9 +590,10 @@ h2 {
 /* icona footer */
 .content-bottom #logo-footer {
     float: left;
-    padding: 50px 0;
+    margin-top: 120px;
+    padding: 40px 0;
     width: 100px;
-    color: #a7a7a7;
+    color: grey;
     text-align: left;
     font-size: 12px;
     border-top: 1px solid #cecece;
