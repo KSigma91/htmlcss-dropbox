@@ -416,7 +416,6 @@ h2 {
     width: 50%;
     /* debug */
     height: 240px;
-    border: 1px solid lime;
 }
 
 .carosel-box .mini-box img { 
@@ -424,6 +423,7 @@ h2 {
     width: 45%;
     height: 45%;
     object-fit: contain;
+    filter: invert(100%);
 }
 
 /* grid box */
@@ -446,6 +446,7 @@ h2 {
 .carosel-box .box-center {
     float: left;
     width: calc(50% / 1);
+    color: black;
     /* width: auto; */
 }
 
@@ -454,7 +455,6 @@ h2 {
     width: auto;
     /* debug */
     height: 480px;
-    border: 1px solid grey;
 }
 
 .box-center .mini-box img {
@@ -462,6 +462,7 @@ h2 {
     width: 12%;
     height: auto;
     object-fit: contain;
+    filter: invert(0);
 }
 
 .box-center .mini-box .line {
@@ -491,7 +492,6 @@ h2 {
     margin-bottom: 50px;
     /* debug */
     height: auto;
-    border: 1px solid deepskyblue;
 }
 
 .box-bottom .footer-box {
