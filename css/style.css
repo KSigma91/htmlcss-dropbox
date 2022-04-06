@@ -63,13 +63,13 @@ h2 {
 
 /* barra parte sinistra */
 .top-bar .row-left {
-    line-height: 78px;     
+    width: calc(100% - 25px);
 }
 
 .top-bar .row-left a {
    float: left;
    margin: 0 25px;
-   height: 80px;
+   line-height: 78px;
 }
 
 .top-bar .row-left ul li a:hover {
@@ -83,13 +83,14 @@ h2 {
 
 /* barra parte destra */
 .top-bar .row-right { 
-    line-height: 78px;
     margin-left: 69%;
+    width: calc(100% - 25px);
 }
 
 .top-bar .row-right a {
     float: left;
     margin: 0 25px;
+    line-height: 78px;
 }
 
 .top-bar .row-right ul li a:hover {
@@ -101,6 +102,7 @@ h2 {
 }
 
 .top-bar .row-right .button {
+    display: inline-block;
     margin: 19px 25px;
     line-height: 30px; 
 }
@@ -110,12 +112,11 @@ h2 {
     background: #B4D0E7;
     width: 100%;
     margin: auto;
-    /* debug */
     height: 100vh;
 }
 
 .row img {
-    float: right;
+    display: block;
     margin-right: 150px;
     width: 60%;
     height: auto;
@@ -151,6 +152,7 @@ h2 {
 }
 
 .row .content-text-center .button {
+    display: inline-block;
     margin-top: 50px;
     padding: 8px 25px;
 }
@@ -186,7 +188,6 @@ h2 {
 
 /* checklist */
 .content .top-text {
-    display: block;
     width: auto;
     height: auto;
 }
@@ -204,9 +205,9 @@ h2 {
 
 /* abbonamenti */
 .content .dropbox {
-    display: inline-block;
-    margin-right: 60px;
-    width: calc(80% / 3);
+    float: left;
+    margin-right: 40px;
+    width: calc((100% / 3) - 70px);
     border: 1px solid #cecece;
 }
 
@@ -218,7 +219,7 @@ h2 {
 
 .content .dropbox .top-box i {
     width: 70px;
-    margin: 15px 142px;
+    margin: 15px 130px;
     padding: 2px 0;
     text-align: center;
 }
@@ -226,6 +227,7 @@ h2 {
 /* descrizione */
 .content .dropbox .center-box {
     margin: 30px 25px;
+    
 }
 
 .dropbox .center-box h3 {
@@ -292,9 +294,9 @@ h2 {
 
 /* contatti */
 .dropbox-bottom {
-    display: block;
+    float: left;
     margin-top: 50px;
-    width: calc(100% - 138px);
+    width: calc(100% - 130px);
 }
 
 /* barra */
@@ -311,12 +313,9 @@ h2 {
 
 /* contenuto */
 .dropbox-bottom .center-box {
-    /* float: left; */
+    float: left;
     border: 1px solid #cecece; 
     width: 100%; 
-}
-
-.dropbox-bottom .center-box {
     padding: 0 40px;
 }
 
@@ -344,8 +343,6 @@ h2 {
     font-size: 14px;
     font-weight: 500;  
 }
-
-
 
 .dropbox-bottom .center-box .dropbox-text {
     margin-bottom: 10px;
@@ -394,6 +391,7 @@ h2 {
     border: 1px solid black;
     color: black;
     font-weight: 500;
+    cursor: pointer;
 }
 
 /* contenuto terza parte */
@@ -434,7 +432,6 @@ h2 {
 .container .carosel {
     width: 100%;
     margin: auto;
-    /* debug */
     height: 100vh;
 }
 
@@ -463,75 +460,64 @@ h2 {
 /* impostazioni generali carosel */
 .carosel-box .mini-box {
     float: left;
-    width: 50%;  
-    height: 240px;
+    width: 15vw;  
+    height: 15vw;
+    text-align: center;
+    line-height: 15vw;
 }
 
 .carosel-box .mini-box img { 
-    margin: 66px 65px;
     width: 45%;
-    height: 45%;
+    vertical-align: middle;
     object-fit: contain;
     filter: invert(100%);
 }
 
 /* grid box */
 .container .carosel-box {
-    width: auto;
+    width: 100%;
     margin: auto;
-    /* debug */
     height: 480px;
 }
 
-/* box left */
-.carosel-box .box-left {
+/* box side */
+.carosel-box .box-side {
     float: left;
-    width: 25%;
-    /* debug */
-    height: auto;
+    width: 30vw;
+    height: 30vw;
 }
 
 /* box center */
 .carosel-box .box-center {
+    background: #f5f5f5;
     float: left;
-    width: calc(50% / 1);
+    padding: 50px;
+    width: calc(100% - 60vw);
+    height: 30vw;
     color: black;
-    /* width: auto; */
+    overflow-y: auto;
 }
 
-.carosel-box .box-center .mini-box {
-    padding: 50px 50px;
-    width: auto;
-    /* debug */
-    height: 480px;
-}
-
-.box-center .mini-box img {
-    margin: 0;
-    width: 12%;
-    height: auto;
+.box-center .big-box img {
+    width: 10vw;
     object-fit: contain;
     filter: invert(0);
 }
 
-.box-center .mini-box .line {
-    display: block;
+.box-center .big-box .line {
     margin-top: 30px;
     border: 1px solid #cecece;
     width: 50px;
 }
 
-.box-center .mini-box p {
-    margin-top: 60px;
-    width: 90%;
+.box-center .big-box p {
+    margin: 60px 0;
 }
 
-/* box right */
-.carosel-box .box-right {
-    float: left;
-    width: 25%;
-    /* debug */
-    height: auto;
+.box-center .big-box span {
+    margin-bottom: 50px;
+    font-size: 15px;
+    font-weight: 500;
 }
 
 /* box bottom */
@@ -539,7 +525,6 @@ h2 {
     float: left;
     width: 100%;
     margin-bottom: 50px;
-    /* debug */
     height: auto;
 }
 
@@ -562,16 +547,14 @@ h2 {
     margin-right: 280px;
     text-align: center;
     font-weight: 500;
-    /* background: white; */
-    /* color: black; */
+    cursor: pointer;
 }
 
 /* sezione FAQ */
 .container .last-bottom {
     width: 70%;
     margin: auto;
-    /* debug */
-    height: 100vh;
+    height: auto;
 }
 
 .last-bottom h2 {
@@ -587,7 +570,6 @@ h2 {
     width: 83%;
     padding: 40px 0;
     border-top: 1px solid #cecece;
-    /* debug */
     height: auto;
 }
 
@@ -611,20 +593,18 @@ h2 {
 .container .content-bottom {
     float: left;
     width: 100%;
-    /* margin: auto; */
-    padding: 100px 150px;
+    padding: 80px 200px;
     background: black;
-    /* debug */
-    height: 530px;
 }
 
 .content-bottom .list-col {
     float: left;
+    /* display: inline-block; */
+    /* padding: 50px 0; */
     width: calc((100% - 10px) / 6);
     color: white;
     line-height: 30px;
-    /* debug */
-    /* height: 200px; */
+    margin-right: 30px;
 }
 
 .list-col .col-bottom h3 {
@@ -633,8 +613,7 @@ h2 {
 }
 
 .list-col .col-bottom ul li a {
-    color: white;
-    font-weight: 600;
+    color: white; 
     font-size: 14px;
     font-weight: 400;
 }
@@ -644,26 +623,12 @@ h2 {
 }
 
 /* icona footer */
-.col-bottom ul li .line {
-    padding-bottom: 120px;
-    border-bottom: 1px solid grey;
-    width: 110px;
-}
-
-.col-bottom ul li a:nth-child(6) {
-    font-size: 12px;
+footer .content-bottom #language {
+    display: inline-block;
+    padding-top: 50px;
+    padding-right: 40px;
     color: grey;
-}
-
-.col-bottom ul li #language {
-    text-decoration: none;
-    color: grey;
-    font-size: 13px;
-}
-
-.col-bottom ul li i {
-    margin-top: 10px;
-    padding: 40px 0;
-    color: grey;
-    font-size: 12px;
+    border-top: 1px solid #cecece;
+    margin-top: 140px;
+    font-size: 14px;
 }
